@@ -10,7 +10,8 @@ import org.springframework.cloud.bus.jackson.RemoteApplicationEventScan;
  * @author Tim Davidson
  */
 @SpringBootApplication
-@RemoteApplicationEventScan // tells spring cloud bus to scan for custom events in the current package and subpackages
+@RemoteApplicationEventScan // tells spring cloud bus to scan for custom events in the current package and
+                            // subpackages
 public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
