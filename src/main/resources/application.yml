@@ -1,9 +1,6 @@
-spring.application.index: ${random.uuid} # this ensures that our applicationId is unique
 spring:
-  cloud:
-    stream:
-      artemis:
-        binder:
-          transport: org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnectorFactory
-          host: localhost
-          port: 61616
+  application:
+    index: ${random.uuid} # this ensures that our applicationId is unique
+#  artemis:
+#    user: # add your Artemis user here
+#    password: # add your Artemis password here
